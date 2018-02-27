@@ -9,7 +9,10 @@ Our motivation for the donation of this example dataset is to support developmen
 
 # Acknowledgment
 
-The data is donated by <big>Monsterboard</big>. Please acknowlege their support in any associated publication.
+The data is donated by <big>Monsterboard</big>. Please acknowlege their support in any associated publication via the addition of the following text
+
+*Acknowledge the support of the Eduworks Marie Curie Initial Training Network Project (PITN-GA-2013-608311) of the European Commission’s 7th Framework Program and Monsterboard for the donation of data.*
+
 Please feel free to contact <big>**a.m.berg AT uva.nl**</big> with any questions.
 
 
