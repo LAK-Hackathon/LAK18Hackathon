@@ -67,4 +67,5 @@ entities(job_doc, kind = "organization")
 
 # 
 # Consider user based collaborative filtering
+# https://github.com/mhahsler/recommenderlab
 # http://www.salemmarafi.com/code/collaborative-filtering-r/
