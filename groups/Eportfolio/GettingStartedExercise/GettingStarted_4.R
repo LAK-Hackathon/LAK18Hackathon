@@ -1,5 +1,4 @@
-# Named Entity Extraction
-# for enrichment, for example names for SNA.
+# Named Entity Extraction for enrichment.
 # Based on 
 # https://rpubs.com/lmullen/nlp-chapter
 #
@@ -64,3 +63,8 @@ entities <- function(doc, kind) {
 entities(job_doc, kind = "person")
 entities(job_doc, kind = "location")
 entities(job_doc, kind = "organization")
+
+
+# 
+# Consider user based collaborative filtering
+# http://www.salemmarafi.com/code/collaborative-filtering-r/
