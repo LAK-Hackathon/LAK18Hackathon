@@ -19,7 +19,7 @@ load(url("https://github.com/LAK-Hackathon/LAK18Hackathon/blob/master/groups/Epo
 x<-10
 rows<- sample(1:20000, x, replace=T)
 texts<-sample$JobBody[rows]
-texts<-iconv(texts, 'utf-8', 'ascii', sub='')
+texts<-iconv(texts, 'utf-8', 'ascii', sub=' ')
 texts[1]
 
 
@@ -158,9 +158,29 @@ freqr[head(ordr,n=20)]
 
 #install.packages("topicmodels")
 library("topicmodels")
+
+# Removing Spase terms
+dtm
+inspect(removeSparseTerms(dtm, 0.5))
+
+#
+#install.packages("RWeka")
+library(RWeka)
+length <- 2 # how many words either side of word of interest
+length1 <- 1 + length * 2
+ngramTokenizer <- function(x) NGramTokenizer(x, Weka_control(min =length, max = length1 ))
+dtm_co <- TermDocumentMatrix(docs, control = list(tokenize = ngramTokenizer))
+inspect(dtm_co)
+
+
+# Topic modeling
 ?LDA
 lda_5 <- LDA(dtm,5)
 get_terms(lda_5, 10)
+
+lda_5s <- LDA(removeSparseTerms(dtm, 0.5),5)
+get_terms(lda_5s, 10)
+
 
 blda_5 <- LDA(bdtm,5)
 get_terms(blda_5, 10)
@@ -168,9 +188,5 @@ get_terms(blda_5, 10)
 tlda_5 <- LDA(tdtm,5)
 get_terms(tlda_5, 10)
 
-# Another approach https://www.tidytextmining.com/topicmodeling.html
-# POS to improve entity extraction later
-# http://smart-statistics.com/part-speech-tagging-r/
 
-# Next step is to work out how to sample for particular features such as new authentic tasks within London
 

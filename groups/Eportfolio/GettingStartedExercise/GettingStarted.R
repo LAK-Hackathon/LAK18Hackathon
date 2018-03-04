@@ -7,6 +7,11 @@
 #
 # PART [1]
 
+#
+# A good introduction 
+# Master text-taming techniques and build effective text-processing applications with R
+# ISBN 978-1-78355-181-1
+# 
 
 # Install Rstudio:  https://www.rstudio.com/products/rstudio/download/
 # If necessary R:  www.r-project.org (download link)
@@ -25,7 +30,7 @@ str(sample)
 sample$SalaryFrom<-as.numeric(sample$SalaryFrom)
 sample$SalaryTo<-as.numeric(sample$SalaryTo)
 
-# Example of how to experiment with conversio
+# Example of how to experiment with conversion
 test<-sample$DateActive
 test<-as.Date(test)
 test[1]
@@ -43,8 +48,22 @@ sample$DateExpires<-as.Date(sample$DateExpires)
 ??sample # Search on the Internet
 
 row<- sample(1:20000, 1, replace=T)
-paste("Row is [",row,"]",sample$JobBody[row])
+job<-sample$JobBody[row]
 
-# Cut and paste into a Google doc and review for authentic tasks
+# UTF8 remover - Not perfect
+job<-iconv(job, 'utf-8', 'ascii', sub=' ')
+paste("Row is [",row,"]",job)
+
+
+# Let's look at the sentence level
+# You never know we might want to train a model
+library(tm)
+library(openNLP)
+job<-as.String(job)
+sentence.boundaries <- annotate(job,Maxent_Sent_Token_Annotator(language = "en", probs = FALSE, model = NULL))
+job[sentence.boundaries]
+
+#http://www.butte.edu/departments/cas/tipsheets/grammar/parts_of_speech.html
+
 
 
