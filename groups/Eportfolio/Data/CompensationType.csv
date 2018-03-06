@@ -1,0 +1,10 @@
+"SalaryTypeID","Description","Factor"
+"1","Per Year",1
+"2","Per Hour",1520
+"3","Per Week",52
+"4","Per Month",12
+"5","Biweekly",104
+"6","Per Day",260
+"7","Quarter",4
+"8","Other",NULL
+"9","Piece Rate",NULL
