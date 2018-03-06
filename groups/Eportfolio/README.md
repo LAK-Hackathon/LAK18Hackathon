@@ -13,3 +13,6 @@
 **RQ4:** What are the definitions of xAPI profiles for Job Market Intelligence enriched e-portfolio systems?
 
 **RQ5:** Which variables captured by xAPI profiles describe the most variance in predictive models for student success?
+
+
+Link to google doc with API links, further info etc.: https://docs.google.com/document/d/1suARXAxcZcUN6bULz1vaNB90cMPLco2ptpTVHUgvcNo/edit?usp=sharing 
