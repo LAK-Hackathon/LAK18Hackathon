@@ -1,0 +1,46 @@
+{
+   
+      "actor": {
+        "account": {
+          "homePage": "https://lakhack.com",
+          "name": "student"
+        },
+        "objectType": "Agent"
+      },
+
+      "context": {
+        "extensions": {
+          "http://http://lackhack.com/parent":"http://data.europa.eu/esco/occupation/09a40a9a-2b60-422c-abe4-96d829bc27df"
+          },
+        },
+
+        "platform": "HackPortfio"
+      },
+
+      "verb": {
+        "display": {
+          "en": "selected"
+        },
+        "id": "http://lackhack.com/verb/selectedgoal"
+      },
+
+      "object": {
+        "definition": {
+          "extensions": {
+           "http://http://lackhack.com/required":"optional"
+           "http://http://lackhack.com/skilltype/type":"skill/competence"
+          },
+          "description": {
+            "en": "Specialise in the conservation of particular types of objects: paintings, sculptures, rare books, photographs, furniture, textiles, etc."
+          },
+          "name": {
+            "en": "specialise in conservation-restoration of specific types of objects"
+          },
+          "type": "http://lackhack.com/skill"
+        },
+        "id": "http://data.europa.eu/esco/skill/2065d166-4d1a-4f0b-a43b-e8a15d366400",
+        "objectType": "Activity"
+      }
+
+    }
+
