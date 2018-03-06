@@ -27,7 +27,7 @@
       "object": {
         "definition": {
           "extensions": {
-           "http://http://lackhack.com/required":"optional"
+           "http://http://lackhack.com/required":"optional",
            "http://http://lackhack.com/skilltype/type":"skill/competence"
           },
           "description": {
