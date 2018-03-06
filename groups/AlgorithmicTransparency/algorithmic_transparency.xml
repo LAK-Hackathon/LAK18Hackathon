@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ATML>
+<introduction>
+<introduction_start>We are presenting you with a prediction of your likely grade in this course, based on aspects of your engagement.</introduction_start>
+<caution>Please note that the prediction is made based on data from previous students and your current activity. It is not necessarily a true indication of your end result which is dependent on a range of factor</caution>
+</introduction>
+
+<data_used>
+<data_used_header>What data is used to create this prediction?</data_used_header>
+<data_used_description>The data fields used to create this prediction are:</data_used_description>
+</data_used>
+
+<metric_weighting>
+<metric_weighting_header>How are the metrics weighted?</metric_weighting_header>
+<metric_weighting_description>Each of the items of data (metrics) are weighted differently in developing the prediction. These weightings are based on the actitivities of previous groups of students. To develop your prediction the following weightings are used:</metric_weighting_description>
+</metric_weighting>
+
+<data_sources>
+<data_sources_header>Where does the data come from?</data_sources_header>
+<data_sources_description>The data comes from the following sources:</data_sources_description>
+</data_sources>
+
+<statistical_method>
+<statistical_method_header>What statistical method is used to create the prediction?</statistical_method_header>
+<multinomialLogistic>The statistical method used to create this prediction is called logistic regression. Logistic regression is a statistical method for analyzing a dataset in which there are one or more independent variables that determine an outcome. The outcome is measured with a dichotomous variable (in which there are only two possible outcomes).</multinomialLogistic>
+</statistical_method>
+</ATML>
